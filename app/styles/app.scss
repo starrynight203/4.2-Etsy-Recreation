@@ -1,7 +1,8 @@
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
+//$grid-gutter-width: 20px;
+//$container-large-desktop: (980px);
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
@@ -9,8 +10,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 *,
 *::before,
 *::after {
+  li{
+    list-style: none;
+  }
   box-sizing: border-box;
 }
+
 
 img {
   max-width: 100%;
@@ -51,19 +56,89 @@ img {
 
 .memberlogin {
   li{
-    list-style: none;
     display: inline-block;
   }
+}
+
+//.header-bottom give a height and see if that gives the space above and below the spans?
+.header-bottom {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
 }
 
 .main-nav {
   border-top: 1px solid gray;
   span {
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     color: gray;
 
   }
+}
+
+.empty-space  {
+  p{
+    display: inline-block;
+  }
+}
+
+.empty-space {
+  span {
+    margin-left: 170px;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.side-nav {
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.categories {
+  border: 1px solid gray;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 240px;
+}
+
+.categories {
+  p{
+    text-align: left;
+  }
+}
+
+.thumbnail {
+  display: inline-block;
+  margin-left: 100px;
+  width: 224px;
+  height: 208px;
+}
+
+.caption {
+  height: 63px;
+  width: 224px;
+  border: 1px solid gray;
+  margin-left: -4px;
+  margin-top: 112px;
+}
+
+.product {
+  font-size: 13px;
+  color: #555;
+  font-weight: normal;
+}
+
+.seller {
+  display: inline-block;
+  color: #AAA;
+  padding-left: 0px;
+}
+
+.price {
+  display: inline-block;
+  color: #78c042;
+  margin: 0;
+  font-size: 12px;
 }
